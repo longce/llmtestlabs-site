@@ -88,7 +88,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(11,13,18,.82);
 /* demo */
 .video{margin:44px auto 0;max-width:900px;border:1px solid var(--line);border-radius:16px;
   overflow:hidden;background:#000;aspect-ratio:16/9}
-.video iframe{width:100%;height:100%;border:0;display:block}
+.video iframe,.video video{width:100%;height:100%;border:0;display:block;object-fit:contain;background:#000}
 .vmeta{text-align:center;color:var(--muted);font-size:14px;margin-top:16px}
 
 /* about */
@@ -216,11 +216,14 @@ footer{border-top:1px solid var(--line);padding:44px 0;color:var(--muted);font-s
     <h2>Web testing demo</h2>
     <p class="lede">A natural-language flight-search task in Priceline. The demo shows the testing interface, the generated automation steps, and a saved workflow.</p>
     <div class="video">
-      <iframe src="https://www.youtube-nocookie.com/embed/hnYrsoPlz4c" title="LLMTest Labs web testing demo"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen loading="lazy"></iframe>
+      <video controls preload="metadata" playsinline poster="assets/demo-poster.jpg"
+             title="LLMTest Labs web testing demo">
+        <source src="assets/demo_web.mp4" type="video/mp4">
+        Your browser cannot play this video.
+        <a href="https://youtu.be/hnYrsoPlz4c">Watch it on YouTube</a> instead.
+      </video>
     </div>
-    <p class="vmeta">2 minutes 27 seconds · English subtitles · <a href="https://youtu.be/hnYrsoPlz4c" target="_blank" rel="noopener" style="color:var(--accent)">Open on YouTube</a></p>
+    <p class="vmeta">2 minutes 27 seconds · English subtitles · also on <a href="https://youtu.be/hnYrsoPlz4c" target="_blank" rel="noopener" style="color:var(--accent)">YouTube</a></p>
   </div>
 </section>
 
